@@ -18,6 +18,7 @@
     justify-content: center;
     align-items: center;
     transition: 0.4s;
+   
 
  }
 
@@ -31,7 +32,7 @@
     
     color:#102f5e;
     font-weight: bold;
-    pointer-events: nome;
+    pointer-events: none;
  }
 
  input,
@@ -40,7 +41,7 @@
  }
 
  .hide{
-    display: nome;
+    display: none;
  }
 
  /*header*/
