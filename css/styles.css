@@ -18,35 +18,26 @@
     justify-content: center;
     align-items: center;
     transition: 0.4s;
-   
-
  }
-
  button:hover{
-    background-color: #102f5e;
+    background-color:#7491ad;
  }
  button:hover > i{
     color: #fff;
  }
  button i{
-    
     color:#102f5e;
     font-weight: bold;
     pointer-events: none;
  }
-
- input,
-  select{
-    padding: 0.25rem 0.5rem;
- }
-
  .hide{
     display: none;
  }
 
  /*header*/
  .todo-container{
-    max-width: 450px;
+    max-width: 650px;
+
     margin:3rem auto 0;
     background-color:  #c4c4c4;
     padding:1.5rem;
@@ -119,6 +110,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 1rem 1rem;
+    background:#f56969;
     border-bottom: 1px solid #ddd;
     transition: 0.3s;
   }
@@ -126,6 +118,7 @@
   .todo h3 {
     flex: 1;
     font-size: 0.9rem;
+    
   }
   
   .todo button {
@@ -133,7 +126,7 @@
   }
   
   .done {
-    background: #395169;
+    background: #54b37a;
   }
   
   .done h3 {
@@ -141,3 +134,18 @@
     text-decoration: line-through;
     font-style: italic;
   }
+
+  /* Estilo inicial para os inputs */
+input,
+select {
+  padding: 0.25rem 0.5rem;
+  border: 2px solid #102f5e;
+  outline: none; /* Remove a borda do foco padrão para evitar conflitos */
+  transition: border-color 0.3s ease-in-out; /* Efeito de transição suave */
+}
+
+/* Estilo quando o input está focado */
+input:focus,
+select:focus {
+  border-color:#7491ad; /* Altera a cor da borda quando focado */
+}
